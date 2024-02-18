@@ -1,0 +1,32 @@
+{{ define "login/index" }}<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <main>
+        <div class="center_container">
+            <h1>ログイン</h1>
+            {{ if .errorMessage }}<label class="form_message red_text">{{.errorMessage}}</label>{{ end }}
+            {{/* form */}}
+            <form method="POST" action="/" class="center_container">
+                <div>
+                    メールアドレス<br>
+                    {{ if .formErrors.Email }}<span class="red_text">{{.formErrors.Email}}</span><br>{{ end }}
+                    <input type="text" name="email" required class="input_text" value="{{.old.Email}}" placeholder="xxxx@xxx.xx" size="60" min="5" max="255">
+                    <br>
+                    <br>
+                    パスワード<br>
+                    {{ if .formErrors.Password }}<span class="red_text">{{.formErrors.Password}}</span><br>{{ end }}
+                    <input type="password" name="password" required class="input_text" value="{{.old.Password}}" placeholder="xxxxxxxx" size="60" min="8" max="255"><br>
+                </div>
+                <button class="roundness light_blue padding_small margin_small border_none" type="submit">ログイン</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
+{{ end }}

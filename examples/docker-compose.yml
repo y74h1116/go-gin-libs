@@ -1,0 +1,13 @@
+services:
+  example:
+    build:
+      context: ./docker/go
+    container_name: go
+    tty: true
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/home/go
+      - ./go/pkg:/go/pkg
+    working_dir: /home/go
+    command: air -c .air.toml

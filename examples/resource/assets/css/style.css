@@ -1,0 +1,109 @@
+
+main {
+	color:#444444;
+}
+
+.red_text {
+	color:red;
+}
+
+.center_container {
+	display: grid;
+	place-items: center;
+	width: 100%;
+}
+
+.side_by_side_container {
+	display:flex;
+}
+
+.child_fit_container {
+	width:fit-content;
+}
+
+.roundness {
+	border-radius: 10px;
+}
+
+.light_blue {
+	background-color: #66CCFF;
+}
+
+.padding_small {
+	padding: 10px;
+}
+
+.margin_small {
+	margin: 10px;
+}
+
+.border_none {
+	border:none;
+}
+
+.form_center_container {
+	display: grid;
+	place-items: center;
+	width: 100%;
+}
+
+.input_text {
+    padding: 4px;
+    line-height: 1;
+	height: 1.5em;
+}
+
+.form_message {
+	width: 400px;
+}
+
+.top_menu_container {
+    padding: 1px;
+	border-bottom: 1px solid #aaa;
+}
+
+.top_menu_container > h1 {
+	font-size: 1.1em;
+}
+
+.top_menu_container > .menu_item {
+    padding: 1px;
+    margin: 0px 1em 0px 0px;
+}
+
+
+.side_menu_container {
+	width: 25%;
+    padding: 4px;
+}
+
+.side_menu_container > .menu_item {
+	text-decoration:underline;
+	cursor: pointer;
+    margin: 0px 0px 0px 0px;
+}
+
+.tweet_container {
+	width: 75%;
+}
+
+.tweet {
+	width: 100%;
+    padding: 10px;
+	overflow-wrap: break-word;
+	border-left: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+}
+.tweet_list {
+	width: 100%;
+    padding: 0;
+    margin: 0px 0px 0px 0px;
+}
+
+.pager {
+	text-align: center;
+	vertical-align:middle;
+	border: 1px solid #aaa;
+    padding: 10px;
+	margin-right:2px:
+}

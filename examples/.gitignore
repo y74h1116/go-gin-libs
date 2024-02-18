@@ -1,0 +1,4 @@
+/tmp
+/go/pkg/*
+!/go/pkg/.gitkeep
+
